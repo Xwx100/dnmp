@@ -2,8 +2,8 @@
 .DS_Store
 
 nohup.out
-logs/**
-data/**
+#logs/**
+#data/**
 # 防止隐私泄露
 .env
 docker-compose.yml
