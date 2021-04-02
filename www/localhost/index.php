@@ -12,6 +12,7 @@ echo '<li>MySQL服务器版本：', getMysqlVersion(), '</li>';
 echo '<li>Redis服务器版本：', getRedisVersion(), '</li>';
 echo '<li>MongoDB服务器版本：', getMongoVersion(), '</li>';
 echo '</ul>';
+phpinfo();
 
 echo '<h2>已安装扩展</h2>';
 printExtensions();
