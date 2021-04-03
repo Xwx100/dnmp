@@ -12,7 +12,6 @@ echo '<li>MySQL服务器版本：', getMysqlVersion(), '</li>';
 echo '<li>Redis服务器版本：', getRedisVersion(), '</li>';
 echo '<li>MongoDB服务器版本：', getMongoVersion(), '</li>';
 echo '</ul>';
-phpinfo();
 
 echo '<h2>已安装扩展</h2>';
 printExtensions();
@@ -25,7 +24,7 @@ function getMysqlVersion()
 {
     if (extension_loaded('PDO_MYSQL')) {
         try {
-            $dbh = new PDO('mysql:host=mysql;dbname=mysql', 'root', '123456');
+            $dbh = new PDO('mysql:host=mysql;dbname=mysql', 'xuweixin', '123456');
             $sth = $dbh->query('SELECT VERSION() as version');
             $info = $sth->fetch();
         } catch (PDOException $e) {
